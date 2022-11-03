@@ -1,0 +1,31 @@
+.tittle{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    padding-top:10%;
+}
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+.slider-container{
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    .boton{
+        margin:20px ;
+        background-color: #9c9ca4 ;
+        border-radius: 10px;
+        height: 90px;
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex: 0 0 auto;
+        .btn-tittle{
+            padding: 20px;
+            text-align: center;
+        }
+    }
+    
+    
+}
