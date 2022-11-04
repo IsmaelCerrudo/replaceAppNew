@@ -21,7 +21,7 @@ function Comics() {
     rootMargin: "0px",
     threshold: 0.1,
   };
-
+  
   useEffect(() => {
     const observe = new IntersectionObserver(() => {
       setOffset(prev => prev + 5);
@@ -48,6 +48,7 @@ function Comics() {
         </div>
       ))}
       <div ref={divRef}></div>
+      <div></div>
     </div>
 
   );
