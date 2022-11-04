@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "../../styles/index.css";
 function Characters({ characters }) {
   return (
-    <div className='main-container'>
+    <div className="main-container">
       {characters.map((item, i) => {
         let jpg = item?.thumbnail?.extension;
         let url = item?.thumbnail?.path;

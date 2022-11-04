@@ -1,0 +1,18 @@
+.comic-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    background-color: #3b3b4b;
+    border-radius: 20px;
+    margin: 20px auto ;
+    padding: 20px;
+    .comic-title{
+        color: #fff;
+        margin: auto;
+    }
+}
+
+.referencia{
+    height: 10px;
+}

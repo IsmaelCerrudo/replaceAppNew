@@ -42,7 +42,7 @@ a {
   display: flex;
   flex: 0 0 auto;
 }
-.slider-container .boton .btn-tittle {
+.slider-container .boton .btn-title {
   padding: 20px;
   text-align: center;
 }
@@ -55,4 +55,23 @@ a {
 
 .main-container {
   min-height: 1280px;
+}
+
+.comic-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100px;
+  background-color: #3b3b4b;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.comic-container .comic-title {
+  color: #fff;
+  margin: auto;
+}
+
+.referencia {
+  height: 10px;
 }/*# sourceMappingURL=index.css.map */
