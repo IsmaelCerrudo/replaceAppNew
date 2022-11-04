@@ -1,6 +1,6 @@
 import Header from "../Header/Header";
-import Chaaracters from '../Characters/Characters'
-import {useState,useEffect,useRef} from 'react'
+import Chaaracters from "../Characters/Characters";
+import { useState, useEffect, useRef } from "react";
 function Home() {
   const [character, setCharacter] = useState([]);
   const [comic, setComic] = useState([]);
@@ -36,9 +36,9 @@ function Home() {
     let observer = new IntersectionObserver(() => {
       setOffset((prev) => prev + 5);
     }, options);
-    observer.observe(divRef.current);
+    if (divRef.current) observer.observe(divRef.current);
     return () => {
-      observer.unobserve(divRef.current);
+      if (divRef.current) observer.unobserve(divRef.current);
     };
   }, [divRef]);
   useEffect(() => {
@@ -48,7 +48,7 @@ function Home() {
   return (
     <>
       <Header comics={comic} />
-      <Chaaracters characters={character}/>
+      <Chaaracters characters={character} />
       <div ref={divRef} style={{ height: "10px" }}></div>
     </>
   );
