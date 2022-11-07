@@ -5,7 +5,7 @@ export const useObserve = (ref) => {
 
   const options = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "600px",
     threshold: 0.1,
   };
 

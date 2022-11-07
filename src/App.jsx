@@ -11,7 +11,6 @@ export function App() {
   // const [idcomic, setIdcomic] = useState(0)
 
   useEffect(() => {
-    // console.log(idcomic)
   }, []);
 
   return (

@@ -13,9 +13,10 @@ function Header({ comics }) {
             <Link className='btn-tittle' to='/'>Home</Link>
         </div>
         {comics.map((item, i) => {
+         
           return (
           <div className={`boton`} key={i}>
-              <Link className="btn-tittle" to='/comics'>
+              <Link className="btn-tittle" to={`/comics/${item.id}`}>
                 <div className="btn-title">{item.title}</div>
               </Link>
             </div>
