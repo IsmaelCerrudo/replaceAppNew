@@ -16,3 +16,15 @@
 .referencia{
     height: 10px;
 }
+
+.comic-page-container{
+    display: flex;
+    .logo-comic{
+        width: 200px;
+        margin: 20px;
+    }
+    .comic-page-title{
+        margin: auto 0;
+        color: #fff;
+    }
+}

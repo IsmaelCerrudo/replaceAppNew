@@ -57,6 +57,14 @@ a {
   min-height: 1280px;
 }
 
+.character-page-container {
+  width: 100vw;
+}
+.character-page-container .character-title {
+  color: #fff;
+  margin: 20px 0px 0px 20px;
+}
+
 .comic-container {
   display: flex;
   flex-direction: column;
@@ -74,4 +82,16 @@ a {
 
 .referencia {
   height: 10px;
+}
+
+.comic-page-container {
+  display: flex;
+}
+.comic-page-container .logo-comic {
+  width: 200px;
+  margin: 20px;
+}
+.comic-page-container .comic-page-title {
+  margin: auto 0;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

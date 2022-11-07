@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+
 import "../../styles/index.css";
 function Characters({ characters }) {
   return (
@@ -8,8 +9,10 @@ function Characters({ characters }) {
         let url = item?.thumbnail?.path;
         return (
           <div key={i} className="character-container">
-            <img className="img-fluid" src={`${url}.${jpg}`} />
-            <h3>{item.name}</h3>
+            <Link to={`/${item.id}`}>
+              <img className="img-fluid" src={`${url}.${jpg}`} />
+              <h3>{item.name}</h3>
+            </Link>
           </div>
         );
       })}
